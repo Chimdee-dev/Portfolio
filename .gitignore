@@ -1,0 +1,29 @@
+# Dependency folders
+node_modules/
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.next/
+.out/
+coverage/
+
+# OS-generated files
+*.swp
