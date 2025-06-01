@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>My portfolio</title>
-    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -15,18 +15,21 @@
             <li><a href="#projects">Төслүүд</a></li>
             <li><a href="#contact">Холбоо барих</a></li>
         </ul>
+        <button id="toggle-dark-mode">Dark Mode</button>
     </nav>
-    <br>
-    <br>    
-    <br>
-    <br>        
-    <br>
-    <br>
-    <br>        
-    <br>
-    <br>
-    <br>
-    <br>
+    <section id="login-section">
+        <h2>Админ нэвтрэх</h2>
+        <input type="password" id="admin-password" placeholder="Нууц үг"/>
+        <button id="login-button">Нэвтрэх</button>
+        <p id="login-error" style="color: red;"></p>
+    </section>
+
+    <section id="admin-panel">
+        <h2>Админ самбар</h2>
+        <button id="enable-edit-mode">Засах горим</button>
+        <button id="save-all">Хадгалах</button>
+
+    </section>
     <section id="hero">
         <div class="hero-content">
         <h1>Миний танилцуулга вэб хуудсанд тавтай морилно уу!</h1>
@@ -38,7 +41,7 @@
         <h2>Миний тухай</h2>
         <div class="about-content">
         <img src="https://picsum.photos/200/200" alt="profile picture" class="profile-pic"/>
-        <p>Lorem ipsum dolor sit ametcing elit. impedit animi numquamlor</p>
+        <p id="about-text">Lorem ipsum dolor sit ametcing elit. impedit animi numquamlor</p>
     </div>
     </section>
     <section id="skills">
@@ -67,17 +70,17 @@
             <div class="project-gird">
             <img src="https://picsum.photos/200/200?random-1" alt="project-1">
             <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p id="project-1">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="project-gird">
             <img src="https://picsum.photos/200/200?random-2" alt="project-2">
             <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p id="project-2">Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="project-gird">
             <img src="https://picsum.photos/200/200?random-3" alt="project-3">
             <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p id="project-3">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
         </div>
     </section>
@@ -94,5 +97,6 @@
     <footer>
         <p>2025 миний танилцуулга. Бүх эрх хуулиар хамгаалагдсан</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

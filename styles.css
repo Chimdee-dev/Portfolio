@@ -8,19 +8,24 @@ body{
     background-color: whitesmoke;
 }
 nav{
-    background-color: #274C8E;
-    position: fixed;
-    width: 100%;
-    padding: 1rem, 2rem;
+    background-color: #222E;
+    position: sticky;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
     z-index: 100;
-    height: 2.5rem;
-}
-nav ul{
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
     list-style: none;
-    justify-content: flex-end;
-    margin-top : 0.5rem;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 nav a{
     color: white;
@@ -30,6 +35,27 @@ nav a{
 }
 nav a:hover{
     color: #FFD702;
+}
+#toggle-dark-mode{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    background-color: #05030b;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+#toggle-dark-mode:hover{
+    background-color: #555;
+}
+body.dark-mode{
+    background-color: #121212;
+    color: white;
 }
 
 #hero{
@@ -182,4 +208,31 @@ footer{
     text-align: center;
     padding: 1rem 0;
     margin-top: 20px;
+}
+#admin-panel{
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+#login-section{
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    
+}
+#login-section h2{
+    margin-bottom: 20px;
+    color: #274C8E;
+}
+#login-section input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
